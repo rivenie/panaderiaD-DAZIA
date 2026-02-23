@@ -26,10 +26,11 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; /* Importante: que no tenga margen superior */
 }
 
 .hero::before {
@@ -49,9 +50,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    position: relative;
-    z-index: 10;
-    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(90, 40, 15, 0.95), rgba(90, 40, 15, 0.85));
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+/* Efecto al hacer scroll (se activa con JS) */
+.navbar.scrolled {
+    background: var(--marron-oscuro);
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled .logo {
+    height: 50px;
+    /* Logo más pequeño al hacer scroll */
+    transition: height 0.3s;
 }
 
 .logo {
@@ -88,10 +105,6 @@ body {
 
 /* Texto central del hero */
 .hero-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     z-index: 5;
     text-align: center;
@@ -636,48 +649,49 @@ footer {
 
 /* ===== FIX RESPONSIVE NOSOTROS ===== */
 @media screen and (max-width: 768px) {
+
     /* Misión, Visión, Filosofía en UNA columna */
     .mvv-grid {
         grid-template-columns: 1fr !important;
         gap: 20px;
     }
-    
+
     /* Grid de quienes somos */
     .nosotros-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .nosotros-texto .section-title {
         font-size: 2rem;
         margin-top: 0;
     }
-    
+
     /* Compromiso en una columna */
     .compromiso-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     /* Ajustar textos */
     .nosotros-texto p {
         font-size: 1rem;
         line-height: 1.6;
     }
-    
+
     .mvv-card {
         padding: 25px 15px;
     }
-    
+
     .mvv-card h3 {
         font-size: 1.3rem;
     }
-    
+
     /* Reducir padding de containers */
     .container {
         padding: 40px 20px;
     }
-    
+
     .section-title {
         font-size: 2rem;
         margin-bottom: 30px;
@@ -690,11 +704,11 @@ footer {
         width: 60px;
         height: 60px;
     }
-    
+
     .compromiso-card {
         padding: 25px 20px;
     }
-    
+
     .compromiso-card h3 {
         font-size: 1.5rem;
     }
