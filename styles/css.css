@@ -96,7 +96,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(to bottom, rgba(90, 40, 15, 0.8), transparent);
+    background: #fff;
     /* Degradado que se difumina */
     flex-wrap: wrap;
 }
@@ -104,7 +104,7 @@ body {
 /* Efecto al hacer scroll (se activa con JS) */
 .navbar.scrolled {
     position: fixed;
-    background: var(--marron-oscuro);
+    background: #FFF;
     backdrop-filter: blur(5px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
@@ -116,8 +116,7 @@ body {
 .logo {
     height: 85px;
     /* Más grande */
-    width: auto;
-    filter: brightness(1.1) drop-shadow(0 4px 10px gold);
+    width: auto;    
     transition: all 0.3s;
 }
 
@@ -134,7 +133,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: var(--marron-oscuro);
     font-weight: 600;
     font-size: 1.1rem;
     padding: 8px 15px;
