@@ -26,11 +26,51 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
+    transition: background-image 5s ease-in-out;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
     justify-content: center;
-    margin-top: 0; /* Importante: que no tenga margen superior */
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    margin-top: 80px;
+    /* Espacio para el navbar */
+}
+
+.hero-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2.5s ease-in-out;
+    z-index: 1;
+}
+
+.hero-fondo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Ajusta la opacidad a tu gusto */
+    z-index: 2;
+    pointer-events: none;
 }
 
 .hero::before {
@@ -50,32 +90,39 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    position: sticky;
+    position: absolute;
+    /* Cambiado de sticky a absolute */
     top: 0;
-    z-index: 1000;
-    background: linear-gradient(to bottom, rgba(90, 40, 15, 0.95), rgba(90, 40, 15, 0.85));
-    backdrop-filter: blur(5px);
+    left: 0;
     width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(90, 40, 15, 0.8), transparent);
+    /* Degradado que se difumina */
+    flex-wrap: wrap;
 }
 
 /* Efecto al hacer scroll (se activa con JS) */
 .navbar.scrolled {
+    position: fixed;
     background: var(--marron-oscuro);
-    padding: 10px 50px;
+    backdrop-filter: blur(5px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .navbar.scrolled .logo {
     height: 50px;
-    /* Logo más pequeño al hacer scroll */
-    transition: height 0.3s;
 }
 
 .logo {
-    height: 70px;
+    height: 85px;
+    /* Más grande */
     width: auto;
-    background: transparent;
-    /* Asume que tu logo tiene fondo transparente */
+    filter: brightness(1.1) drop-shadow(0 4px 10px gold);
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    filter: brightness(1.2) drop-shadow(0 6px 15px var(--dorado-principal));
 }
 
 .menu {
@@ -126,6 +173,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .menu a {
+        font-size: 0.8rem;
+    }
+
     .navbar {
         flex-direction: column;
         gap: 15px;
