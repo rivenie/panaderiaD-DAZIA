@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D'DAZIA | Nosotros</title>
     <link rel="stylesheet" href="styles/css.css" />
-    <!-- Para íconos si quieres, pero no es obligatorio -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header Hero con imagen de fondo -->
@@ -16,13 +19,34 @@
         class="logo"
         onerror="this.src = 'https://via.placeholder.com/150x70?text=LOGO'"
       />
-      <ul class="menu">
-        <li><a href="index.html" class="active">Nosotros</a></li>
-        <li><a href="ofrecemos.html">Ofrecemos</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="preguntas.html">Preguntas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+
+      <div class="nav-derecha">
+        <div class="nav-iconos">
+          <a
+            href="mailto:ana.narro@ddazia.com"
+            class="icono"
+            target="_blank"
+            title="Correo electrónico"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/p/Ddazia-100063757006020/"
+            class="icono"
+            target="_blank"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Nosotros</a></li>
+          <li><a href="ofrecemos.html">Ofrecemos</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
     <header class="hero">
       <div class="hero-content">
@@ -132,7 +156,7 @@
         </div>
         <div class="footer-section">
           <h4>Contacto</h4>
-          <p>📍 Calle Pedro Garezón Mz A Lt 05, Urb. Las Mercedes, Piura</p>          
+          <p>📍 Calle Pedro Garezón Mz A Lt 05, Urb. Las Mercedes, Piura</p>
           <p>📧 ventas@ddazia.com</p>
           <p>📞 +51 907 256 300</p>
         </div>
@@ -163,6 +187,6 @@
       >📱</a
     >
 
-    <script src="js/script.js"></script>    
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D'DAZIA | Ofrecemos</title>
     <link rel="stylesheet" href="styles/css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -14,20 +18,36 @@
         class="logo"
         onerror="this.src = 'https://via.placeholder.com/150x70?text=LOGO'"
       />
-      <ul class="menu">
-        <li><a href="index.html">Nosotros</a></li>
-        <li><a href="ofrecemos.html" class="active">Ofrecemos</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="preguntas.html">Preguntas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+
+      <div class="nav-derecha">
+        <div class="nav-iconos">
+          <a
+            href="mailto:ana.narro@ddazia.com"
+            class="icono"
+            target="_blank"
+            title="Correo electrónico"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/p/Ddazia-100063757006020/"
+            class="icono"
+            target="_blank"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Nosotros</a></li>
+          <li><a href="ofrecemos.html" class="active">Ofrecemos</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
-    <header
-      class="hero"
-      style="
-        background-image: url(&quot;https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80&quot;);
-      "
-    >
+    <header class="hero">
       <div class="hero-content">
         <h1>Descubre Nuestra Tradición</h1>
       </div>
@@ -36,13 +56,10 @@
     <!-- Bloque 1: Pan de Molde (imagen izquierda, texto derecha) -->
     <div class="ofrecemos-bloque">
       <div class="ofrecemos-img">
-        <img
-          src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-          alt="Pan de molde"
-        />
+        <img src="img/PANES VARIADOS.jpeg" alt="Pan de molde" />
       </div>
       <div class="ofrecemos-texto">
-        <h3>Pan de Molde Artesanal</h3>
+        <h3>PRODUCTOS DE PANADERIA EN VARIEDAD</h3>
         <p>
           Elaborado con masa madre natural y harina de primera calidad. Su
           textura esponjosa y corteza suave lo hacen perfecto para desayunos y
@@ -60,11 +77,11 @@
     <!-- Bloque 2: Turrón (imagen derecha, texto izquierda) -->
     <div class="ofrecemos-bloque">
       <div class="ofrecemos-texto">
-        <h3>Turrón Artesanal</h3>
+        <h3>PASTELERIA Y TORTAS</h3>
         <p>
-          Tradicional turrón de Doña Pepa, preparado con anís, ajonjolí y
-          grageas de colores. Ideal para compartir en familia. Receta original
-          que pasa de generación en generación.
+          Elaboramos tortas y pasteles para todo tipo de celebraciones, con
+          altos estándares de higiene, calidad y diseño. Cada creación lleva el
+          sabor y el amor que nos caracteriza.
         </p>
         <a
           href="https://wa.me/51907256300?text=Hola!%20Quiero%20comprar%20Turrón"
@@ -84,17 +101,15 @@
     <!-- Bloque 3: Croissant (imagen izquierda, texto derecha) -->
     <div class="ofrecemos-bloque">
       <div class="ofrecemos-img">
-        <img
-          src="https://images.unsplash.com/photo-1623334044303-241021148842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Croissant"
-        />
+        <img src="img/Bocaditos.jpeg" alt="Croissant" />
       </div>
       <div class="ofrecemos-texto">
-        <h3>Croissant de Mantequilla</h3>
+        <h3>ELABORACION DE BOCADITOS PARA EVENTOS</h3>
         <p>
-          Hojaldrado, dorado y con ese sabor inconfundible a mantequilla
-          francesa. Perfecto para un desayuno especial o una tarde de café.
-          Horneados a diario.
+          Preparación de bocaditos dulces y salados para toda ocasión:
+          empanadas, canapés, mini sándwiches, encanelados y más. Hechos con
+          ingredientes frescos y presentación impecable. Ideal para cumpleaños,
+          reuniones empresariales y celebraciones familiares.
         </p>
         <a
           href="https://wa.me/51907256300?text=Hola!%20Quiero%20comprar%20Croissant"
@@ -102,6 +117,30 @@
           target="_blank"
           >Comprar por WhatsApp</a
         >
+      </div>
+    </div>
+    <!-- Bloque 4: Próximamente Heladería Artesanal (imagen derecha, texto izquierda) -->
+    <div class="ofrecemos-bloque">
+      <div class="ofrecemos-texto">
+        <h3>PRÓXIMAMENTE HELADERÍA ARTESANAL</h3>
+        <p>
+          Muy pronto, los mejores helados artesanales llegarán a D'DAZIA.
+          Sabores únicos, ingredientes naturales y la misma calidad que nos
+          caracteriza. Frescura y cremosidad en cada cucharada. ¡Prepárate para
+          disfrutar!
+        </p>
+        <a
+          href="https://wa.me/51907256300?text=Hola!%20Quiero%20más%20información%20sobre%20la%20heladería%20artesanal"
+          class="btn-wpp"
+          target="_blank"
+          >Más información</a
+        >
+      </div>
+      <div class="ofrecemos-img">
+        <img
+          src="img/HELADO.jpeg"
+          alt="Helados artesanales"
+        />
       </div>
     </div>
 
@@ -155,5 +194,6 @@
         }
       });
     </script>
+    <script src="js/ofrecemos.js"></script>
   </body>
 </html>

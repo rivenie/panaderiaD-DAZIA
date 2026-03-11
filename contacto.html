@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D'DAZIA | Contacto</title>
     <link rel="stylesheet" href="styles/css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -14,13 +18,34 @@
         class="logo"
         onerror="this.src = 'https://via.placeholder.com/150x70?text=LOGO'"
       />
-      <ul class="menu">
-        <li><a href="index.html">Nosotros</a></li>
-        <li><a href="ofrecemos.html">Ofrecemos</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="preguntas.html">Preguntas</a></li>
-        <li><a href="contacto.html" class="active">Contacto</a></li>
-      </ul>
+
+      <div class="nav-derecha">
+        <div class="nav-iconos">
+          <a
+            href="mailto:ana.narro@ddazia.com"
+            class="icono"
+            target="_blank"
+            title="Correo electrónico"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/p/Ddazia-100063757006020/"
+            class="icono"
+            target="_blank"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Nosotros</a></li>
+          <li><a href="ofrecemos.html">Ofrecemos</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
     <header
       class="hero"
@@ -32,7 +57,74 @@
         <h1>Horneamos Ideas, Escuchamos Sueños</h1>
       </div>
     </header>
+    <!-- Formulario de contacto -->
+    <div class="formulario-container">
+      <h3 class="formulario-titulo">📝 Envíanos tu consulta o pedido</h3>
 
+      <form
+        action="https://formsubmit.co/ana.narro@ddazia.com"
+        method="POST"
+        class="formulario"
+      >
+        <!-- Campos ocultos para mejor experiencia -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nuevo mensaje desde web D'DAZIA"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://tudominio.com/gracias.html"
+        />
+
+        <div class="form-group">
+          <label for="nombre">Nombre completo *</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Ej: Juan Pérez"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="ejemplo@correo.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Ej: 907256300"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje o pedido *</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            required
+            placeholder="Escribe aquí tu consulta o el detalle de tu pedido..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </div>
     <section class="container">
       <h2 class="section-title">Información de Contacto</h2>
       <div class="contacto-grid">
@@ -44,10 +136,10 @@
           <p><i>📱</i> +51 907 256 300 (WhatsApp)</p>
 
           <h3>📧 Correos Electrónicos</h3>
-          <p>✉️ ana.narro@ddazia.com</p>          
+          <p>✉️ ana.narro@ddazia.com</p>
 
           <h3>🕒 Horarios de Atención</h3>
-          <p>Lunes a Sábado: 7:00 am – 8:00 pm</p>          
+          <p>Lunes a Sábado: 7:00 am – 8:00 pm</p>
           <p>Mañanas: 5:30 am – 11:00 am</p>
           <p>Tardes: 3:30 pm – 9:00 pm</p>
           <p>Domingos: 6:00 am - 11:00 am</p>

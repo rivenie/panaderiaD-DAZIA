@@ -10,7 +10,6 @@ window.addEventListener("scroll", function () {
 });
 
 // Inicializar cuando el DOM esté listo
-// Inicializar cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM cargado, iniciando slider con fade...");
 
