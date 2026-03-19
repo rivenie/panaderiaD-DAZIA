@@ -770,6 +770,10 @@ footer {
     border-radius: 20px;
 }
 
+.contacto-info a{
+    text-decoration: none;
+}
+
 .contacto-info h3 {
     color: var(--marron-oscuro);
     margin: 25px 0 15px;

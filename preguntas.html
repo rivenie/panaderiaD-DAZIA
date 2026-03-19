@@ -12,12 +12,14 @@
   </head>
   <body>
     <nav class="navbar">
-      <img
-        src="img/logo.png"
-        alt="D'DAZIA Logo"
-        class="logo"
-        onerror="this.src = 'https://via.placeholder.com/150x70?text=LOGO'"
-      />
+      <a href="index.html">
+        <img
+          src="img/logo.png"
+          alt="D'DAZIA Logo"
+          class="logo"
+          onerror="this.src = 'https://via.placeholder.com/150x70?text=LOGO'"
+        />
+      </a>
 
       <div class="nav-derecha">
         <div class="nav-iconos">
@@ -134,7 +136,11 @@
           <p>Mañanas: 5:30am - 11am</p>
           <p>Tardes: 3:30pm - 9pm</p>
           <p>Domingos: 6am - 11am</p>
-          <a href="#" class="social-link"
+          <a
+            href="https://www.facebook.com/p/Ddazia-100063757006020/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
             >Facebook: Panadería y Pastelería D'DAZIA</a
           >
         </div>
@@ -148,11 +154,12 @@
     </footer>
 
     <a
-      href="https://wa.me/51907256300?text=Hola!%20Tengo%20una%20consulta"
+      href="https://wa.me/51907256300?text=Hola!%20Quisiera%20hacer%20un%20pedido"
       class="whatsapp-float"
       target="_blank"
-      >📱</a
     >
+      <i class="fab fa-whatsapp"></i>
+    </a>
     <script>
       window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
